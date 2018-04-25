@@ -1,19 +1,27 @@
-import _ from 'lodash';
-import printMe from './print.js';
+import toLi from './print.js';
 
 function component() {
-  var element = document.createElement('div');
-  var btn = document.createElement('button');
+  var container = document.createElement('div');
+  container.innerHTML = '<p>Hello, Cypress!<p>';
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  var btnClick = document.createElement('button');
+  btnClick.innerHTML = 'Click me!';
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
+  var list = document.createElement('ul');
+  list.setAttribute('class', 'list');
 
-  element.appendChild(btn);
 
-  return element;
+  btnClick.addEventListener('click', function () {
+    var list = document.getElementsByClassName('list')[0];
+    var item = document.createElement('li');
+    item.innerHTML = toLi();
+    list.appendChild(item);
+  });
+
+  container.appendChild(btnClick);
+  container.appendChild(list);
+
+  return container;
 }
 
 document.body.appendChild(component());

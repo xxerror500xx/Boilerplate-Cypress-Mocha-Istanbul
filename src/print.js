@@ -1,3 +1,5 @@
-export default function printMe() {
-  console.log('I get called from print.js!');
+var clickNum = 0;
+export default function toLi() {
+  clickNum++;
+  return `<li><span>Clicked! ` + clickNum + `</span></li>`;
 }
