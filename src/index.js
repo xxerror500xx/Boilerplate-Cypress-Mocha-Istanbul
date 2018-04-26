@@ -1,4 +1,5 @@
-import toLi from './print.js';
+import { getClickNum, newClick, clickNum, toLi } from './print';
+import { add, subtract, multiply, divide } from './math';
 
 function component() {
   var container = document.createElement('div');
@@ -14,7 +15,12 @@ function component() {
   btnClick.addEventListener('click', function () {
     var list = document.getElementsByClassName('list')[0];
     var item = document.createElement('li');
-    item.innerHTML = toLi();
+    newClick();
+    var sum = add(getClickNum(), getClickNum());
+    var difference = subtract(getClickNum(), getClickNum());
+    var product = multiply(getClickNum(), getClickNum());
+    var quotient = divide(getClickNum(), getClickNum());
+    item.innerHTML = toLi(sum, difference, product, quotient);
     list.appendChild(item);
   });
 
