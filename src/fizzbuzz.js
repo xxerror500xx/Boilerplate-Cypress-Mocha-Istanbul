@@ -1,4 +1,4 @@
-module.exports = (num) => {
+export default function(num){
   if (num % 3 === 0 && num % 5 === 0) {
     return "fizzbuzz"
   }
