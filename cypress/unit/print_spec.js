@@ -15,6 +15,6 @@ context('unit test print.js', function(){
     var diff = 2;
     var prod = 3;
     var quo = 3;
-    expect(toLi(fizzor, num, sum, diff, prod, quo)).to.eq(`<li>1[...] | Add: 3 + 1 = 4 | Sub: 3 - 1 = 2 | Mul: 3 * 1 = 3 | Div: 3 / 1 = 3 |</li>`)
+    expect(toLi(fizzor, num, sum, diff, prod, quo)).to.eq('<li>1[...] | Add: 3 + 1 = 4 | Sub: 3 - 1 = 2 | Mul: 3 * 1 = 3 | Div: 3 / 1 = 3 |</li>')
   })
 })

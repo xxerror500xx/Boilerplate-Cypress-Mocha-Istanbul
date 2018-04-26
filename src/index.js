@@ -14,15 +14,17 @@ function component() {
 
 
   btnClick.addEventListener('click', function () {
-    var list = document.getElementsByClassName('list')[0];
-    var item = document.createElement('li');
     newClick();
+    // var list = document.getElementsByClassName('list')[0];
+    var item = document.createElement('li');
+
     var num = 3;
-    var fizzor = fizzbuzz(getClickNum());
-    var sum = add(num, getClickNum());
-    var difference = subtract(num, getClickNum());
-    var product = multiply(num, getClickNum());
-    var quotient = divide(num, getClickNum());
+    var numClicked = getClickNum();
+    var fizzor = fizzbuzz(numClicked);
+    var sum = add(num, numClicked);
+    var difference = subtract(num, numClicked);
+    var product = multiply(num, numClicked);
+    var quotient = divide(num, numClicked);
     item.innerHTML = toLi(fizzor, num, sum, difference, product, quotient);
     list.appendChild(item);
   });
