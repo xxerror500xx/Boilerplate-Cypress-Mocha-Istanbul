@@ -13,6 +13,6 @@ describe('Find local dev webserver',() => {
     cy.get('Button')
       .click().click()
     cy.get('.list').children().should('have.length', 3)
-      .contains('3[fizz] |')
+      .contains('3[fizz] | Add: 3 + 3 = 6 | Sub: 3 - 3 = 0 | Mul: 3 * 3 = 9 | Div: 3 / 3 = 1 |')
   })
 })
