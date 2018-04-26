@@ -1,5 +1,6 @@
 import { getClickNum, newClick, clickNum, toLi } from './print';
 import { add, subtract, multiply, divide } from './math';
+import fizzbuzz from './fizzbuzz';
 
 function component() {
   var container = document.createElement('div');
@@ -17,11 +18,12 @@ function component() {
     var item = document.createElement('li');
     newClick();
     var num = 3;
+    var fizzor = fizzbuzz(getClickNum());
     var sum = add(num, getClickNum());
     var difference = subtract(num, getClickNum());
     var product = multiply(num, getClickNum());
     var quotient = divide(num, getClickNum());
-    item.innerHTML = toLi(num, sum, difference, product, quotient);
+    item.innerHTML = toLi(fizzor, num, sum, difference, product, quotient);
     list.appendChild(item);
   });
 

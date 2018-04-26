@@ -20,4 +20,9 @@ context('unit test fizzbuzz.js', function(){
   it('returns "fizzbuzz" when number is multiple of both 3 and 5', function(){
     numsExpectedToEq([15, 30, 60], "fizzbuzz")
   })
+
+  it('returns "..." when number is not a multiple of 3 or 5', function(){
+    numsExpectedToEq([1, 1, 2], "...")
+  })
+
 })

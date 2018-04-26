@@ -10,4 +10,6 @@ export default function(num){
   if (num % 5 === 0) {
     return "buzz"
   }
+  
+  return "..."
 }
