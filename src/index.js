@@ -16,11 +16,12 @@ function component() {
     var list = document.getElementsByClassName('list')[0];
     var item = document.createElement('li');
     newClick();
-    var sum = add(getClickNum(), getClickNum());
-    var difference = subtract(getClickNum(), getClickNum());
-    var product = multiply(getClickNum(), getClickNum());
-    var quotient = divide(getClickNum(), getClickNum());
-    item.innerHTML = toLi(sum, difference, product, quotient);
+    var num = 3;
+    var sum = add(num, getClickNum());
+    var difference = subtract(num, getClickNum());
+    var product = multiply(num, getClickNum());
+    var quotient = divide(num, getClickNum());
+    item.innerHTML = toLi(num, sum, difference, product, quotient);
     list.appendChild(item);
   });
 

@@ -6,10 +6,11 @@ export function newClick() {
   clickNum++;
 }
 
-export function toLi(sum, diff, prod, quo) {
-  let addExample = " | Add: " + clickNum + " + " + clickNum + " = " + sum;
-  let subExample = " | Sub: " + clickNum + " - " + clickNum + " = " + diff;
-  let mulExample = " | Mul: " + clickNum + " * " + clickNum + " = " + prod;
-  let divExample = " | Div: " + clickNum + " / " + clickNum + " = " + quo;
-  return `<li>Clicked! ` + clickNum + addExample + subExample + mulExample + divExample +`</li>`;
+export function toLi(num, sum, diff, prod, quo) {
+  let addExample = " | Add: " + num + " + " + clickNum + " = " + sum;
+  let subExample = " | Sub: " + num + " - " + clickNum + " = " + diff;
+  let mulExample = " | Mul: " + num + " * " + clickNum + " = " + prod;
+  let divExample = " | Div: " + num + " / " + clickNum + " = " + quo + ` |`;
+  let arith = addExample + subExample + mulExample + divExample;
+  return `<li>Clicked! ` + clickNum + arith +`</li>`;
 }

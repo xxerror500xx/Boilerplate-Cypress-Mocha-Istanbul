@@ -9,6 +9,11 @@ context('unit test print.js', function(){
     expect(getClickNum()).to.eq(1)
   })
   it('return a specific string', function(){
-    expect(toLi(2, 0, 1, 1)).to.eq(`<li>Clicked! 1 | Add: 1 + 1 = 2 | Sub: 1 - 1 = 0 | Mul: 1 * 1 = 1 | Div: 1 / 1 = 1</li>`)
+    var num = 3;
+    var sum = 4;
+    var diff = 2;
+    var prod = 3;
+    var quo = 3;
+    expect(toLi(num, sum, diff, prod, quo)).to.eq(`<li>Clicked! 1 | Add: 3 + 1 = 4 | Sub: 3 - 1 = 2 | Mul: 3 * 1 = 3 | Div: 3 / 1 = 3 |</li>`)
   })
 })
