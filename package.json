@@ -1,14 +1,15 @@
 {
   "name": "cypress-unit",
   "version": "1.0.0",
-  "description": "",
+  "description": "An exploration of modules, unit test and integration tests using Cypress",
+  "keywords": ["Cypress", "unit", "integration", "test", "modules", "example", "fizzbuzz", "ES2015"],
   "private": true,
   "scripts": {
     "cypress:open": "cypress open",
     "build": "webpack",
     "start": "webpack-dev-server --open"
   },
-  "author": "",
+  "author": "Clifford Minks",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -18,7 +19,5 @@
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
   },
-  "dependencies": {
-    "lodash": "^4.17.5"
-  }
+  "dependencies": {}
 }
