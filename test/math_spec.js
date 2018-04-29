@@ -1,4 +1,5 @@
-import { add, subtract, divide, multiply } from '../../src/math'
+import {expect} from 'chai'
+import { add, subtract, divide, multiply } from '../src/math'
 
 context('unit test math.js', function(){
   it('can add numbers', function(){
