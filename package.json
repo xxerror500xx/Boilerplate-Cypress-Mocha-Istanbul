@@ -16,7 +16,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "build": "webpack",
-    "start": "webpack-dev-server --open",
+    "serv-dev": "webpack-dev-server --open",
     "test": "mocha --require babel-core/register --recursive",
     "test-cover": "nyc --reporter=text mocha --require babel-core/register --recursive"
   },
