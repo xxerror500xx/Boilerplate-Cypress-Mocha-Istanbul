@@ -1,7 +1,7 @@
 {
-  "name": "cypress-unit",
+  "name": "boilerplate-cypress-mocha-istanbul",
   "version": "1.0.0",
-  "description": "An exploration of modules, unit test and integration tests using Cypress",
+  "description": "This project is an expansion on the cypress-unit repo.",
   "keywords": [
     "Cypress",
     "unit",
