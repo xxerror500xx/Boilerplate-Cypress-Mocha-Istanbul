@@ -1,24 +1,33 @@
 {
   "name": "boilerplate-cypress-mocha-istanbul",
   "version": "1.0.0",
-  "description": "This project is an expansion on the cypress-unit repo.",
+  "description": "This project is an expansion on the cypress-unit-build repo.",
   "keywords": [
     "Cypress",
-    "unit",
     "integration",
+    "unit",
+    "mocha",
     "test",
-    "modules",
     "example",
+    "modules",
     "fizzbuzz",
-    "ES2015"
+    "math",
+    "print",
+    "ES6",
+    "Ecma2015",
+    "babel",
+    "istanbul",
+    "nyc",
+    "webpack-dev-server"
   ],
   "private": true,
   "scripts": {
     "cypress-open": "cypress open",
     "build": "webpack",
     "serv-dev": "webpack-dev-server --open",
-    "test": "mocha --require babel-core/register --recursive",
-    "test-cover": "nyc --reporter=text mocha --require babel-core/register --recursive"
+    "test": "nyc --reporter=text-summary mocha --require babel-core/register --recursive",
+    "test-watch": "nyc --reporter=text-summary mocha --require babel-core/register --recursive --watch --watch-extensions js test/**/**/*.js",
+    "coverage": "nyc --reporter=html --reporter=text-summary mocha --require babel-core/register --recursive"
   },
   "author": "Clifford Minks",
   "license": "ISC",

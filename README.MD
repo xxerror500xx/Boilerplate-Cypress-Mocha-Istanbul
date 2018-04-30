@@ -23,8 +23,9 @@ Build from src
 
 Testing
   1. Unit
-    - `npm run test`
-    - `npm run test-cover` (provides unit test code coverage data to terminal)
+    - `npm run test` (Runs all unit tests with a C0 summary)
+    - `npm run test-watch` (Watches all tests and re-runs upon save w/ C0 summary.)
+    - `npm run coverage` (runs all test and outputs html of C0 to ./coverage)
 
   2. Integration (Starts the Dev server and opens it within the default browser. Must be run before starting Cypress in a new terminal.)
     - `npm run serv-dev`
