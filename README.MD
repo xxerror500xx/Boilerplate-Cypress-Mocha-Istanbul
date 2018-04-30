@@ -15,20 +15,20 @@ During my exploration of cypress I found that although you can have unit tests w
 ###### Config
 
 ###### Workflow testing commands
-1. Build from src
+Build from src
   1. Dev
     - `npm run build`
   2. Prod
 
 
-1. Testing
+Testing
   1. Unit
     - `npm run test`
     - `npm run test-cover` (provides unit test code coverage data to terminal)
 
   2. Integration (Starts the Dev server and opens it within the default browser. Must be run before starting Cypress in a new terminal.)
-    1. `npm run start`
-    2. `npm run cypress:open`
+    - `npm run serv-dev`
+    - `npm run cypress-open`
 
 ###### Stack
 - Node.js (Base of js reality)
