@@ -6,7 +6,9 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/index.js',
-    print: './src/print.js'
+    print: './src/components/print/print.js',
+    math: './src/components/math/math.js',
+    fizzbuzz: './src/components/fizzbuzz/fizzbuzz.js'
   },
   devtool: 'inline-source-map',
   devServer: {

@@ -1,5 +1,5 @@
 import {expect} from 'chai'
-import {getClickNum, newClick, clickNum, toLi} from '../src/print'
+import {getClickNum, newClick, clickNum, toLi} from '../../../src/components/print/print'
 
 context('unit test print.js', function(){
   it('should return current number times clicked', function(){

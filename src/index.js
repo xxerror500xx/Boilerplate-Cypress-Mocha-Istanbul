@@ -1,6 +1,6 @@
-import { getClickNum, newClick, clickNum, toLi } from './print';
-import { add, subtract, multiply, divide } from './math';
-import fizzbuzz from './fizzbuzz';
+import { getClickNum, newClick, clickNum, toLi } from './components/print/print';
+import { add, subtract, multiply, divide } from './components/math/math';
+import fizzbuzz from './components/fizzbuzz/fizzbuzz';
 
 function component() {
   var container = document.createElement('div');

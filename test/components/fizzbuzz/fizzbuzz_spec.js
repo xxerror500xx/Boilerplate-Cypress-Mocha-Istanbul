@@ -1,5 +1,5 @@
 import {expect} from 'chai'
-import fizzbuzz from '../src/fizzbuzz'
+import fizzbuzz from '../../../src/components/fizzbuzz/fizzbuzz'
 
 context('unit test fizzbuzz.js', function(){
   function numsExpectedToEq (arr, expected) {
