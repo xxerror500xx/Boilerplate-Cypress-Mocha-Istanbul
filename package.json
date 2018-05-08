@@ -25,6 +25,8 @@
     "cypress-open": "cypress open",
     "build": "webpack",
     "serv-dev": "webpack-dev-server --open",
+    "lint": "eslint src ./test",
+    "lint:fix": "eslint --fix src ./test",
     "test": "nyc --reporter=text-summary mocha --opts ./mocha.opts --recursive",
     "test-watch": "nyc --reporter=text-summary mocha  --opts ./mocha.watch.opts",
     "coverage": "nyc --reporter=text-summary --reporter=text-summary mocha --opts ./mocha.opts --recursive"

@@ -1,0 +1,9 @@
+{
+    "extends": "standard",
+    "globals": {
+        "context": true,
+        "describe": true,
+        "it": true,
+        "expect": true
+    }
+}
