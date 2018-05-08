@@ -44,6 +44,7 @@ Testing
 - Chai (adds expect testing terminology)
 - Istanbul (reporting on unit test coverage)
 - Babel (ES6 transpiler)
+- Node-Notifier (native-ish os pop-ups for notifications)
 
 ###### Code test patterns implemented
 - Unit testing
