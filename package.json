@@ -26,8 +26,8 @@
     "build": "webpack",
     "serv-dev": "webpack-dev-server --open",
     "test": "nyc --reporter=text-summary mocha --opts ./mocha.opts --recursive",
-    "test-watch": "mocha --recursive --require babel-core/register --watch --watch-extensions _spec.js --reporter mocha-webpack-notifier-reporter",
-    "coverage": "nyc --reporter=lcov --reporter=text-summary mocha --recursive"
+    "test-watch": "nyc --reporter=text-summary mocha  --opts ./mocha.watch.opts",
+    "coverage": "nyc --reporter=text-summary --reporter=text-summary mocha --opts ./mocha.opts --recursive"
   },
   "repository": {
     "type": "git",

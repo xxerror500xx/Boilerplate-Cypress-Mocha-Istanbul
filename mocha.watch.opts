@@ -1,0 +1,4 @@
+--require babel-core/register
+--reporter mocha-webpack-notifier-reporter
+--recursive
+--watch --watch-extensions _spec.js
