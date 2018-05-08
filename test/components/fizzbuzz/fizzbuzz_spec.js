@@ -1,29 +1,28 @@
-import {expect} from 'chai'
-import fizzbuzz from '../../../src/components/fizzbuzz/fizzbuzz'
+import { expect } from 'chai';
+import fizzbuzz from '../../../src/components/fizzbuzz/fizzbuzz';
 
-context('unit test fizzbuzz.js', function(){
-  function numsExpectedToEq (arr, expected) {
+context('unit test fizzbuzz.js', () => {
+  function numsExpectedToEq(arr, expected) {
     // loop through the array of nums and make
     // sure they equal what is expected
     arr.forEach((num) => {
-      expect(fizzbuzz(num)).to.eq(expected)
-    })
+      expect(fizzbuzz(num)).to.eq(expected);
+    });
   }
 
-  it('returns "fizz" when number is multiple of 3', function(){
-    numsExpectedToEq([9, 12, 18], "fizz")
-  })
+  it('returns "fizz" when number is multiple of 3', () => {
+    numsExpectedToEq([9, 12, 18], 'fizz');
+  });
 
-  it('returns "buzz" when number is multiple of 5', function(){
-    numsExpectedToEq([10, 20, 25], "buzz")
-  })
+  it('returns "buzz" when number is multiple of 5', () => {
+    numsExpectedToEq([10, 20, 25], 'buzz');
+  });
 
-  it('returns "fizzbuzz" when number is multiple of both 3 and 5', function(){
-    numsExpectedToEq([15, 30, 60], "fizzbuzz")
-  })
+  it('returns "fizzbuzz" when number is multiple of both 3 and 5', () => {
+    numsExpectedToEq([15, 30, 60], 'fizzbuzz');
+  });
 
-  it('returns "..." when number is not a multiple of 3 or 5', function(){
-    numsExpectedToEq([1, 1, 2], "...")
-  })
-
-})
+  it('returns "..." when number is not a multiple of 3 or 5', () => {
+    numsExpectedToEq([1, 1, 2], '...');
+  });
+});
